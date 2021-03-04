@@ -1,0 +1,10 @@
+version: '3'
+services:
+    web:
+        build: .
+        ports:
+        - "80:80"
+        restart: always
+
+        volumes:
+        - .:/var/log/apache2
